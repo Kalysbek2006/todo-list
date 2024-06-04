@@ -1,3 +1,32 @@
+body {
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #53cbf1, #e00a5b);
+    background-size: 800% 800%;
+    animation: gradientAnimation 15s ease infinite;
+    /*height: 100vh;*/
+    margin: 0;
+    /*display: flex;/*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
